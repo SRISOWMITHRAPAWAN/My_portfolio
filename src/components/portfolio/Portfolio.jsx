@@ -93,6 +93,7 @@ const Portfolio = () => {
                     <div style={{color:"#4db5ff"}}>Tech Stack used:<br></br>   <Button variant="outlined">ReactJs</Button>&nbsp;
                     <Button variant="outlined">ExpressJs</Button>&nbsp;
                     <Button variant="outlined">MongoDB</Button>&nbsp;
+                    <Button variant="outlined">Bootstrap</Button>&nbsp;
                     </div>
                     <div style={{display:"flex",justifyContent:"space-between"}}>
                     <a href={project.site} target='_blank' style={{marginTop:"1rem"}}><span style={{marginTop:"2rem"}}><GoMarkGithub/></span>&nbsp;{project.source}</a>
