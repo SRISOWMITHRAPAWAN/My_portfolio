@@ -7,6 +7,7 @@ import animationData2 from "../../lotties/Hotel.json"
 import animationData3 from "../../lotties/webscrap.json"
 import { BiLinkExternal } from "react-icons/bi";
 import { GoMarkGithub } from "react-icons/go";
+import Button from '@mui/material/Button';
 
 const projects = [
 { 
@@ -89,6 +90,10 @@ const Portfolio = () => {
                     <small className='portfolio__desc'>
                         {project.description}
                     </small>
+                    <div style={{color:"#4db5ff"}}>Tech Stack used:<br></br>   <Button variant="outlined">ReactJs</Button>&nbsp;
+                    <Button variant="outlined">ExpressJs</Button>&nbsp;
+                    <Button variant="outlined">MongoDB</Button>&nbsp;
+                    </div>
                     <div style={{display:"flex",justifyContent:"space-between"}}>
                     <a href={project.site} target='_blank' style={{marginTop:"1rem"}}><span style={{marginTop:"2rem"}}><GoMarkGithub/></span>&nbsp;{project.source}</a>
                     <a href={project.live} target='_blank'style={{marginTop:"1rem",marginRight:"2rem"}}><span style={{marginTop:"2rem"}}><BiLinkExternal/></span>{project.livename}</a>
